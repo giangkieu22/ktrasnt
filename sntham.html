@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ham ktra</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhập số nguyên dương: "));
+    function snt(a) {
+        if (a < 2) {
+            return false;
+        }
+        if (a===2) {
+            return true;
+        }
+        for(let i = 2; i < a; i++) {
+            if(a % i === 0) {
+                return false;
+            }
+            return true;
+        }
+    }
+    if(snt(a)){
+        alert(a + " la snt");
+    }
+    else {
+        alert(a + " k la snt");
+    }
+</script>
+</body>
+</html>
